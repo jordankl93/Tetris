@@ -123,7 +123,7 @@ public class Tetris extends JFrame {
 	 * Creates a new Tetris instance. Sets up the window's properties,
 	 * and adds a controller listener.
 	 */
-	private Tetris() {
+	public Tetris() {
 		/*
 		 * Set the basic properties of the window.
 		 */
@@ -274,7 +274,7 @@ public class Tetris extends JFrame {
 	/**
 	 * Starts the game running. Initializes everything and enters the game loop.
 	 */
-	private void startGame() throws Exception {
+	public void startGame() throws Exception {
 		/*
 		 * Initialize our random number generator, logic timer, and new game variables.
 		 */
@@ -564,18 +564,6 @@ public class Tetris extends JFrame {
 	 */
 	public int getPieceRotation() {
 		return currentRotation;
-	}
-
-	/**
-	 * Entry-point of the game. Responsible for creating and starting a new
-	 * game instance.
-	 * @param args Unused.
-	 */
-	public static void main(String[] args) throws Exception{
-            Tetris tetris = new Tetris();
-            tetris.startGame();
-         
-           
 	}
 
 }
